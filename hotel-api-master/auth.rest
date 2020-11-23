@@ -1,0 +1,50 @@
+http://localhost:8080/api/v1
+
+###
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Han",
+    "lastName": "Test",
+    "address": "California",
+    "country": "USA",
+    "phone": "1234567890",
+    "email": "aadd@gmail.com",
+    "password": "password",
+    "role" : "admin"
+}
+###
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  
+    "email": "aadd@gmail.com",
+    "password": "password"
+}
+###
+ http://localhost:8080/api/v1/auth/users
+ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lbWJlckBnbWFpbC5jb20iLCJ1c2VySWQiOiI1Zjk5MmUzNjc0ZGJiZDAxOTRiNjhmNzciLCJyb2xlIjoibWVtYmVyIiwiaWF0IjoxNjAzODc0MzY2LCJleHAiOjE2MDQyMzQzNjZ9.zWYELAWroFsKfEtQjoCbMNqsZewWHNpIA5VM2jTo1sA
+###
+ http://localhost:8080/api/v1/auth/users
+ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOTkyNzdlNzc1MGZjNDllOGI1NzFmOCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYwMzg3NDQwNCwiZXhwIjoxNjA0MjM0NDA0fQ.LfyCuf_IZg4aR9rl69ujug9DqXctxCk--E3PogkpqZA
+
+###
+
+http://localhost:8080/api/v1/auth/users/5f996d301d8506591806b764
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1lbWJlcjJAZ21haWwuY29tIiwidXNlcklkIjoiNWY5OTZkMzAxZDg1MDY1OTE4MDZiNzY0Iiwicm9sZSI6Im1lbWJlciIsImlhdCI6MTYwMzg5MDQ5NiwiZXhwIjoxNjA0MjUwNDk2fQ.xcfLcDe5qFKITCDoLmqkZBUDPjWJvNGjNRNrRx6JrnU
+
+###
+POST http://localhost:8080/api/v1/auth/activate/gHOyIh5FrTvBoicT
+
+
+###
+POST http://localhost:8080/api/v1/booking/register
+Content-Type: application/json
+
+{
+    "startDate": "01-20-2000",
+    "endDate": "01-21-2000",
+  
+}

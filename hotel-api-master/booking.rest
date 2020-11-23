@@ -1,0 +1,38 @@
+http://localhost:8080/api/v1/booking
+
+###
+
+POST http://localhost:8080/api/v1/booking/add
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNocmlzdGlhbm10dGFuQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOWFkZTZlZmY0MDMwNTM3MGI0ZGU0ZiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2MDM5ODUwNDMsImV4cCI6MTYwNDM0NTA0M30.C0g2ewFAUa6HUivvgSOt-bMsAMkFw_ykRb4MjBeP7Us
+
+{
+    "startDate": "04-20-2000",
+    "endDate": "06-20-2000",
+    "roomID" : "test"
+}
+###
+http://localhost:8080/api/v1/booking/findall
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNocmlzdGlhbm10dGFuQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOWFkZTZlZmY0MDMwNTM3MGI0ZGU0ZiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2MDM5ODUwNDMsImV4cCI6MTYwNDM0NTA0M30.C0g2ewFAUa6HUivvgSOt-bMsAMkFw_ykRb4MjBeP7Us
+
+###
+http://localhost:8080/api/v1/booking/findOne/5f9b73c11e71b240a466f1e5
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNocmlzdGlhbm10dGFuQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOWFkZTZlZmY0MDMwNTM3MGI0ZGU0ZiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2MDM5ODUwNDMsImV4cCI6MTYwNDM0NTA0M30.C0g2ewFAUa6HUivvgSOt-bMsAMkFw_ykRb4MjBeP7Us
+
+###
+PUT http://localhost:8080/api/v1/booking/edit/5f9b73c11e71b240a466f1e5
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNocmlzdGlhbm10dGFuQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOWFkZTZlZmY0MDMwNTM3MGI0ZGU0ZiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2MDM5ODUwNDMsImV4cCI6MTYwNDM0NTA0M30.C0g2ewFAUa6HUivvgSOt-bMsAMkFw_ykRb4MjBeP7Us
+
+{
+    "startDate" : "10-10-1010",
+    "endDate" : "12-12-1212"
+}
+
+###
+DELETE http://localhost:8080/api/v1/booking/delete/5f9b73c11e71b240a466f1e5
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNocmlzdGlhbm10dGFuQGdtYWlsLmNvbSIsInVzZXJJZCI6IjVmOWFkZTZlZmY0MDMwNTM3MGI0ZGU0ZiIsInJvbGUiOiJtZW1iZXIiLCJpYXQiOjE2MDM5ODUwNDMsImV4cCI6MTYwNDM0NTA0M30.C0g2ewFAUa6HUivvgSOt-bMsAMkFw_ykRb4MjBeP7Us
+

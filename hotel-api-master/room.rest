@@ -1,0 +1,47 @@
+http://localhost:8080/api/v1/room
+
+###
+
+POST http://localhost:8080/api/v1/room/add
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
+{
+    "capacity": "10",
+    "cost" : "10"
+}
+
+###
+http://localhost:8080/api/v1/room/findAll
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
+###
+http://localhost:8080/api/v1/room/findOne/5f9b80b23396c345b417388f
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
+
+5f9b9b1d9618c349a85d3c20-booking
+5f9b81cc3fae9c2d642cc0ee-room
+
+###
+http://localhost:8080/api/v1/room/assign/5f9b81cc3fae9c2d642cc0ee/5f9b9b1d9618c349a85d3c20
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
+###
+PUT http://localhost:8080/api/v1/room/edit/5f9b80b23396c345b417388f
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
+{
+    "capacity": "60",
+    "cost" : "60"
+}
+
+###
+DELETE http://localhost:8080/api/v1/room/delete/5f9b80b23396c345b417388f
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhZGRAZ21haWwuY29tIiwidXNlcklkIjoiNWY5YjdkZDY2MTBjZjkxZDE0ZTBmMGRhIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjA0MDI2NDMzLCJleHAiOjE2MDQzODY0MzN9.oBe6rCuP_ZXqP87U3t1cdjQoHnHBL5Y2h2Jlr6-4l9A
+
